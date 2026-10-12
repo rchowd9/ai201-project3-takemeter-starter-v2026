@@ -54,31 +54,31 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `label_one:` narrative_rant
 
-**Definition:**
+**Definition:** A deeply personal expression of emotional frustration, nostalgia, or heartbreak regarding perceived changes or ruining of a game's franchise or storyline.
 
-**Example 1:**
+**Example 1:** So as I grew up I loved knights in armor I thought man there were the coolest people ever... Seeing halo for the first time my thoughts were an actual knight in armor... but then came a TV show were they actually removed master chiefs helmet... All the integrity of master chief was destroyed... I actually cried for real they killed him erased him claimed his head literally for a profit.
 >
 
-**Example 2:**
+**Example 2:** Never will I ever accept the dude as master chief and playing the games just feels like a dead body nobody bothers to bury properly.
 >
 
-### `label_two`
+### `label_two` promotional_post
 
-**Definition:**
+**Definition:** Marketing or hype-driven content focused on blockchain features, crypto tokens, NFTs, or marketplace staking in a web3 game.
 
-**Example 1:**
+**Example 1:** you must root the bluestack 5 app and then install it in your computer for blue stack, to make it seems working fine!
 >
 
-**Example 2:**
+**Example 2:** Kryxivia incorporates features such as player-driven governance and community-driven development, which allow players to have a greater say in the direction of the game and its future development.
 >
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** narrative_rant and promotional_post
 
-**The decision rule I used every time:**
+**The decision rule I used every time:** If the post focuses primarily on financial gain, crypto tokens, or marketplace mechanics, it is promotional_post, even if it uses enthusiastic or emotional language about the game's future.
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 

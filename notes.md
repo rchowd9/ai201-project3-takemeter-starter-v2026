@@ -1,8 +1,5 @@
 # Candidate distinctions for r/gaming
 
-> Drafted with Claude before reading (Claude couldn't access Reddit). Check each
-> against my own 30–40 posts and replace the example lines with real ones.
-
 ## 1. Some posts give a specific, checkable detail. Most don't.
 
 Some comments name something you could verify: hours played, price, frame rate,
