@@ -77,7 +77,7 @@ Because our test split contains only about 10 examples per label, individual cla
 
 ---
 
-## 3.
+## 3. Balance
 
 <!-- Your criterion. -->
 
@@ -86,7 +86,7 @@ Criterion: No single predicted label accounts for more than 50% of the model's t
 
 
 **Why this target:**
-
+Our dataset is perfectly balanced with 33.3% per class (70 examples each). Because an untrained or collapsing model will often default to predicting the majority class to artificially boost baseline metrics, capping predicted class share at 50% ensures the model actually utilizes all three categories rather than suffering from class collapse.
 
 
 ---
