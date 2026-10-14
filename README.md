@@ -54,31 +54,44 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one:` narrative_rant
+### `label_one:` analysis
 
-**Definition:** A deeply personal expression of emotional frustration, nostalgia, or heartbreak regarding perceived changes or ruining of a game's franchise or storyline.
+**Definition:** A post that evaluates specific checkable facts, quantitative metrics, frame data, statistics, or systematic performance comparisons.   
 
-**Example 1:** So as I grew up I loved knights in armor I thought man there were the coolest people ever... Seeing halo for the first time my thoughts were an actual knight in armor... but then came a TV show were they actually removed master chiefs helmet... All the integrity of master chief was destroyed... I actually cried for real they killed him erased him claimed his head literally for a profit.
+**Example 1:** Looking at the frame data for this active skill, it has a 3-frame startup and is completely unsafe on block unless spaced properly at maximum range.
 >
 
-**Example 2:** Never will I ever accept the dude as master chief and playing the games just feels like a dead body nobody bothers to bury properly.
+**Example 2:** I ran 50 consecutive test runs in the training arena to calculate the exact gold drop rate per hour, and it averages out to roughly 14,200 gold per zone.
 >
 
-### `label_two` promotional_post
+### `label_two:` hot_take
 
-**Definition:** Marketing or hype-driven content focused on blockchain features, crypto tokens, NFTs, or marketplace staking in a web3 game.
+**Definition:** A strongly opinionated, emotional, or provocative expression of frustration, praise, or general critique regarding game design or industry trends.
 
-**Example 1:** you must root the bluestack 5 app and then install it in your computer for blue stack, to make it seems working fine!
+**Example 1:** This is literally the worst game ever made and anyone defending the developers has completely lost their mind.
 >
 
-**Example 2:** Kryxivia incorporates features such as player-driven governance and community-driven development, which allow players to have a greater say in the direction of the game and its future development.
+**Example 2:** Multiplayer gaming peaked ten years ago and every single modern release is just a corporate cash grab designed to squeeze wallets.
 >
+
+### `label_three:` lore_discussion
+
+**Definition:** A post focused on narrative exploration, environmental storytelling, character arcs, and world-building details.
+
+**Example 1:** I love how the environmental storytelling in the ruined cathedral hints at the ancient war between the two rival factions before the collapse.
+>
+
+**Example 2:** If you piece together all the scattered journal entries, it becomes clear that the main antagonist was actually trying to prevent a greater catastrophe.
+>
+
+
 
 ### The hardest boundary
 
-**Which two labels:** narrative_rant and promotional_post
+**Which two labels:** analysis and hot_take
 
-**The decision rule I used every time:** If the post focuses primarily on financial gain, crypto tokens, or marketplace mechanics, it is promotional_post, even if it uses enthusiastic or emotional language about the game's future.
+**The decision rule I used every time:** If the post names a specific checkable fact, number, or empirical test, it's analysis, even if the tone is heated or critical.
+
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
