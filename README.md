@@ -91,45 +91,35 @@
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Public gaming communities and discussion forums, focusing on empirical mechanics, frame data, narrative lore deep-dives, and passionate hot takes.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** I labelled the first 20 posts completely cold by hand to establish a clean baseline for consistency. The remaining 190 posts were pre-labelled using an AI assistant trained on my label definitions, after which I read, verified, and manually corrected every single one to ensure no noise or skimming errors entered the dataset.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| analysis | 70 | 33.3% |
+| hot_take | 70 | 33.3% |
+| lore_discussion | 70 | 33.3% |
+| **Total** | **210** | **100%** |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> *The post:* "Looking at the frame data and patch notes, this character's startup is completely broken and ruins the entire competitive meta."
+> *Could have been:* `analysis` or `hot_take`
+> *I chose, because:* Even though it references frame data and patch notes (which lean toward `analysis`), the dominant emotional tone and use of words like "completely broken" and "ruins" make it a heated `hot_take`.
 
 **2.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> *The post:* "If you analyze the background murals in the ancient temple and cross-reference them with the journal entries, the faction war was actually orchestrated by the king."
+> *Could have been:* `analysis` or `lore_discussion`
+> *I chose, because:* While it uses analytical phrasing ("analyze" and "cross-reference"), the core subject matter explores story world-building and narrative history rather than quantitative metrics or game mechanics.
 
 **3.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> *The post:* "I ran 50 consecutive test runs in the training arena to calculate the exact gold drop rate per hour, averaging 14,200 gold."
+> *Could have been:* `analysis` or `lore_discussion`
+> *I chose, because:* It relies entirely on empirical testing, numerical metrics, and systematic data gathering rather than narrative interpretation or opinion.
 
 ---
 
