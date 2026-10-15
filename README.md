@@ -54,37 +54,44 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one:` analysis
+## Label Taxonomy
 
-**Definition:** A post that evaluates specific checkable facts, quantitative metrics, frame data, statistics, or systematic performance comparisons.   
+### `analysis`
 
-**Example 1:** Looking at the frame data for this active skill, it has a 3-frame startup and is completely unsafe on block unless spaced properly at maximum range.
->
+**Definition:** A post that evaluates specific checkable facts, quantitative metrics, frame data, statistics, or systematic performance comparisons.
 
-**Example 2:** I ran 50 consecutive test runs in the training arena to calculate the exact gold drop rate per hour, and it averages out to roughly 14,200 gold per zone.
->
+**Example 1:**
+> Looking at the frame data for this active skill, it has a 3-frame startup and is completely unsafe on block unless spaced properly at maximum range.
 
-### `label_two:` hot_take
+**Example 2:**
+> I ran 50 consecutive test runs in the training arena to calculate the exact gold drop rate per hour, and it averages out to roughly 14,200 gold per zone.
+
+### `hot-take`
 
 **Definition:** A strongly opinionated, emotional, or provocative expression of frustration, praise, or general critique regarding game design or industry trends.
 
-**Example 1:** This is literally the worst game ever made and anyone defending the developers has completely lost their mind.
->
+**Example 1:**
+> This is literally the worst game ever made and anyone defending the developers has completely lost their mind.
 
-**Example 2:** Multiplayer gaming peaked ten years ago and every single modern release is just a corporate cash grab designed to squeeze wallets.
->
+**Example 2:**
+> Multiplayer gaming peaked ten years ago and every single modern release is just a corporate cash grab designed to squeeze wallets.
 
-### `label_three:` lore_discussion
+### `reaction`
 
-**Definition:** A post focused on narrative exploration, environmental storytelling, character arcs, and world-building details.
+**Definition:** A personal expression of sentiment, casual commentary, or immediate emotional response to game events, updates, or character moments.
 
-**Example 1:** I love how the environmental storytelling in the ruined cathedral hints at the ancient war between the two rival factions before the collapse.
->
+**Example 1:**
+> So as I grew up I loved knights in armor I thought man there were the coolest people ever truly people who were broke and awesome the best and bravest Seeing halo for the first time...
 
-**Example 2:** If you piece together all the scattered journal entries, it becomes clear that the main antagonist was actually trying to prevent a greater catastrophe.
->
+**Example 2:**
+> I genuinely cried when they unmasked the main character and threw away everything that made the lore special just to chase quick mainstream cash grabs.
 
+### The hardest boundary
 
+**Which two labels:** `analysis` and `hot-take`
+
+**The decision rule I used every time:** 
+> "If the post names a specific checkable fact, number, or empirical test, it's `analysis`, even if the tone is heated or critical."
 
 ### The hardest boundary
 
