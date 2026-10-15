@@ -138,18 +138,24 @@
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Base model:** distilbert-base-uncased
 
-**Base model:**
+**Settings:** epochs: 3, learning rate: 2e-5, batch size: 16, seed: 42
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Anything I changed from the defaults, and why:** Kept standard defaults for text classification fine-tuning (`distilbert-base-uncased`, 3 epochs, learning rate 2e-5) as they provide an optimal balance of fast convergence and stable generalization on small text datasets without overfitting.
 
-**Anything I changed from the defaults, and why:**
+**Split sizes:** 
+Excluding 20 rows with missing labels, total active dataset is 323 rows, split as follows:
+- **Train:** 225 rows
+- **Val:** 49 rows
+- **Test:** 49 rows
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
-
+Per-label counts across splits:
+| Label | Train | Val | Test |
+|---|---|---|---|
+| analysis | 49 | 10 | 11 |
+| hot-take | 77 | 17 | 17 |
+| reaction | 99 | 22 | 21 |
 
 
 ---
