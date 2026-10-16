@@ -39,6 +39,8 @@
 
 ## What This Does
 
+This project builds a custom text classification pipeline using a fine-tuned transformer (`distilbert-base-uncased`) to categorize public gaming community posts. The classifier sorts community discussions into three distinct operational categories: empirical game mechanics and data analysis (`analysis`), provocative or emotional critiques (`hot-take`), and casual personal sentiment or reactions (`reaction`). By comparing a zero-shot baseline against our fine-tuned model across multiple random seeds, we evaluate how effectively fine-tuning captures nuanced gaming discourse.
+
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
@@ -119,28 +121,30 @@
 
 | Label | Count | Share |
 |---|---|---|
-| analysis | 70 | 33.3% |
-| hot_take | 70 | 33.3% |
-| lore_discussion | 70 | 33.3% |
-| **Total** | **210** | **100%** |
+| analysis | 70 | 20.4% |
+| hot_take | 111 | 32.4% |
+| reaction | 142 | 41.4% |
+| **Total** | **323(active)** | **100%** |
 
 **Three hard cases**
 
 **1.**
 > *The post:* "Looking at the frame data and patch notes, this character's startup is completely broken and ruins the entire competitive meta."
-> *Could have been:* `analysis` or `hot_take`
-> *I chose, because:* Even though it references frame data and patch notes (which lean toward `analysis`), the dominant emotional tone and use of words like "completely broken" and "ruins" make it a heated `hot_take`.
+> *Could have been:* `analysis` or `hot-take`
+> *I chose:* `hot-take`
+> *Because:* Even though it references frame data and patch notes (which lean toward `analysis`), the dominant emotional tone and use of words like "completely broken" and "ruins" make it a heated `hot-take`.
 
 **2.**
-> *The post:* "If you analyze the background murals in the ancient temple and cross-reference them with the journal entries, the faction war was actually orchestrated by the king."
-> *Could have been:* `analysis` or `lore_discussion`
-> *I chose, because:* While it uses analytical phrasing ("analyze" and "cross-reference"), the core subject matter explores story world-building and narrative history rather than quantitative metrics or game mechanics.
+> *The post:* "I genuinely cried when they unmasked the main character and threw away everything that made the lore special just to chase quick mainstream cash grabs."
+> *Could have been:* `reaction` or `hot-take`
+> *I chose:* `reaction`
+> *Because:* While it expresses strong frustration over industry trends, the deeply personal, narrative-focused emotional heartbreak fits squarely into a personal `reaction`.
 
 **3.**
 > *The post:* "I ran 50 consecutive test runs in the training arena to calculate the exact gold drop rate per hour, averaging 14,200 gold."
-> *Could have been:* `analysis` or `lore_discussion`
-> *I chose, because:* It relies entirely on empirical testing, numerical metrics, and systematic data gathering rather than narrative interpretation or opinion.
-
+> *Could have been:* `analysis` or `hot-take`
+> *I chose:* `analysis`
+> *Because:* It relies entirely on empirical testing, numerical metrics, and systematic data gathering rather than emotional opinion.
 ---
 
 ## The Training Run
@@ -177,18 +181,16 @@ Per-label counts across splits:
      problem. -->
 
 **Moment 1**
-
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Assistance in generating candidate label definitions and sorting initial gaming forum posts into structured categories.
+- *What came back:* Drafted definitions for empirical posts vs. opinions.
+- *What I changed:* Refined the definitions to establish strict boundaries (specifically adding the checkable-fact rule for `analysis` vs `hot-take`).
 
 **Moment 2**
+- *What I asked for:* Pre-labelling assistance for the bulk of the raw text dataset based on my finalized taxonomy rules.
+- *What came back:* A batch of pre-assigned labels across the collected posts.
+- *What I changed:* Read and verified every single pre-labelled row manually, correcting edge cases and misclassifications to ensure data integrity.
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
-
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** I used an AI assistant to pre-label the bulk batch of posts after manually annotating the first 20 cold. Every single pre-labelled row was subsequently reviewed, verified, and corrected by hand.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
