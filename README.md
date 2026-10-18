@@ -219,7 +219,7 @@ Per-label counts across splits:
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
-**What the gap actually means:**
+**What the gap actually means:** The fine-tuned model substantially outperformed the zero-shot baseline across overall accuracy (+0.184) and Macro F1 (+0.235), proving that fine-tuning successfully internalized our custom taxonomy rather than relying on generic zero-shot prompt associations. However, the drop in `hot-take` F1 (-0.214) reveals that the model struggled to separate emotional critiques from personal reactions, often confusing boundary cases where passionate opinions overlapped with casual commentary.
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 
