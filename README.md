@@ -206,12 +206,16 @@ Per-label counts across splits:
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.347 | 0.531 | +0.184 |
+| Macro F1 | 0.197 | 0.432 | +0.235 |
+| F1 — `analysis` | 0.000 | 0.308 | +0.308 |
+| F1 — `hot_take` | 0.500 | 0.286 | -0.214 |
+| F1 — `reaction` | 0.091 | 0.702 | +0.611 |
 
-**What I predicted before I looked:**
+
+**What I predicted before I looked:** I predict our fine-tuned model will beat the zero-shot baseline most notably on analysis and hot-take posts, because fine-tuning teaches the model our specific decision boundary for distinguishing empirical metrics from emotional complaints rather than relying on general zero-shot prompt associations.
+
+
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 

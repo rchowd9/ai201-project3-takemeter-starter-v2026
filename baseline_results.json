@@ -1,0 +1,279 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 49,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 49,
+    "accuracy": 0.3469387755102041,
+    "f1_macro": 0.196969696969697,
+    "per_label": {
+      "analysis": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "hot_take": {
+        "precision": 0.3404255319148936,
+        "recall": 0.9411764705882353,
+        "f1": 0.5,
+        "support": 17
+      },
+      "reaction": {
+        "precision": 1.0,
+        "recall": 0.047619047619047616,
+        "f1": 0.0909090909090909,
+        "support": 21
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "such a good draft from both sides",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Spirit from lower bracket is insanely evil. The longer the play the better they are.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "teamwife... lol spirit overcommited...",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "the agh better for ursa in this match",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "MidOne was right",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "So proud of not_me as a DW enjoyer. Easily the MVP atm",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "against who?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Notme speed running joining comp Dota to having an iconic hero with these Willow games lmao",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Let them play a game 5 and give sven to watson so yatoro can learn a little bit about it",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "A: SEA players",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "It never happened, becuse he never had opportunity to play without Yatoro.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "oh my, yandex vs spirit once again...",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "lots of spell damage and has stinger to offset the breath fire damage reduction.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "not_me is probably a top 3 pos. 4 atm",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "He's been insane since joining Team Spirit. One of the best pos 4 at the moment imo",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "In Kryxivia, the future of gaming is in the blockchain. The game is built on the Ethereum network, which means that players can own and trade their in-game assets on the blockchain. This creates a new level of transparency and security for players, as well as an entirely new way of experiencing the game. More rewarding and exciting journey",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Some non gamer made that shit and called the whole dota community out LOL",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "honestly all teams this tournament have save your buddy syndrome just leave one player die",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "genuinely asking has collapse reached any grand finals without yatoro of any tournament???",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "I mean, yes the dark portrait bug sucks, but objectively, it probably wouldn\u2019t have matter. Once SD gets aghs, Ursa is not a hero.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Is this a good Sven game?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "It\u2019s crazy how yandex essentially has 2 carries in these 3 games",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Is there some people here that does things like breaking down players' games? I'd like to look at this specific AM game by Yatoro. Just little things like farming patterns, item choices, neutral item choices. I love the hero and it's nice that he's starting to get played again.",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "You are playing against Yandex. You don't ban Timbersaw because you can counter it. Ammar instantly picks Timbersaw. You lose against Yandex. You ban Timbersaw the next game because you're not stupid.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "nah. they miss Miposka. with Collapse they gonna lose anyway cause they draft shit",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "giving doom to ATF kekw",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Kill bane -> game over",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Kryxivia incorporates features such as player-driven governance and community-driven development, which allow players to have a greater say in the direction of the game and its future development.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Malady is bound to win a TI in the future. By far the best player in this series so far.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Haven't read the post-TI patch notes, but how come AM, a hero that went completely uncontested at TI and was called unsalvageable in the modern game by this sub, is now apparently an S-tier carry that's impossible to win a late game against?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "the question if TS will actually get serious throughout the series or troll in between. will they pick OD again? lol",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Lose lanes + lose early game with no comeback mechanism vs Yandex = game over. Same conceptual problem, Yandex just found ways to draft more scaling so they aren't reliant on autowinning by 10k at 20 minutes, and can instead only be up 4-6 k and hit their timings a bit later.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Ember chains, gs silence stun, rubick lift, tide ulti and shard are also pretty good.",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "ban dazzle next game",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Ammar Doom is just different.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "they have been playing together since their YeSub days iirc",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "We know it wasn't you /s",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Crazy team, i was watching that game thinking the exact same thing",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Fuzzy bear got deleted by Yatoro like a wet tissure paper",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "This new TS have 3 young player and still count as top 3 team right now. Yatoro should be the key, no matter who mid, who offlane, who support. Yatoro in TS = tier 1 team",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "ammar the feeder",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "3:1 it\u2019s gonna be",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Top 2 throne attempt of all time?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Please dont pick OD or stupid Razor so we got all good game like gamd 2.",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Say that again Noticed?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "No solution for Dazzle whatsoever.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "1:1 it\u2019s gonna be",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Looks like the spirit bandwagon is back on the menu",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Ofc Larl forced that and fucked his team",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    }
+  ]
+}
