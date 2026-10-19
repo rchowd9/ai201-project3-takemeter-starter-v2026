@@ -245,13 +245,14 @@ Per-label counts across splits:
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | analysis | hot_take | reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **analysis** | 2 | 6 | 3 |
+| **hot_take** | 0 | 4 | 13 |
+| **reaction** | 0 | 1 | 20 |
 
-**My biggest off-diagonal number, and what it means:**
+**My biggest off-diagonal number, and what it means:** **My biggest off-diagonal number, and what it means:**
+13 real `hot_take` posts were classified as `reaction`, while only 1 real `reaction` post was called `hot_take`; this directional lopsidedness shows the model heavily biased toward labeling emotionally charged critiques as casual reactions.
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
