@@ -234,11 +234,11 @@ Per-label counts across splits:
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | >= 0.70 | 0.531 | 0.592 | 0.612 | MISSED |
+| 2. Per-label F1 floor | >= 0.60 | F1_ana: 0.308 / 0.167 / 0.455<br>F1_hot: 0.286 / 0.452 / 0.533<br>F1_rxn: 0.702 / 0.764 / 0.739 | MISSED |
+| 3. Class prediction balance | < 50% max share | Met (no class exceeded 50% share) | MET |
+| 4. Macro F1 stability | Std Dev < 0.08 (Spread: 0.144) | 0.432 | 0.461 | 0.576 | MISSED |
+| 5. High-confidence precision | >= 0.85 accuracy at >0.80 conf | Evaluated across test runs | MISSED |
 
 ### Confusion matrix
 
