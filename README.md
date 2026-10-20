@@ -268,11 +268,11 @@ Per-label counts across splits:
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall Accuracy | >= 0.70 across all seeds | MISSED | Overall accuracy across seeds 42, 7, and 2024 peaked at 0.612, falling short of the 0.70 threshold. |
+| 2 | Per-Label F1 Floor | >= 0.60 for all classes | MISSED | While `reaction` performed well (0.70–0.76), `analysis` dropped as low as 0.167 and `hot_take` to 0.286 across seeds. |
+| 3 | Prediction Balance | < 50% max share per class | MET | No single predicted category dominated past 50% test share across evaluation runs. |
+| 4 | Macro F1 Stability | Std Dev < 0.08 across seeds | MET | Macro F1 standard deviation across the three seeds was 0.062, satisfying the < 0.08 stability ceiling. |
+| 5 | High-Confidence Precision | >= 0.85 accuracy at >0.80 conf | MISSED | High-confidence model predictions did not maintain an 85% accuracy floor due to boundary overlap between classes. |
 
 **Diagnoses**
 
@@ -284,6 +284,22 @@ Per-label counts across splits:
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
+
+     1. **A genuinely hard label pair (`hot_take` vs `reaction`):**
+   * *Cause:* Emotional critiques and personal reactions overlap heavily in tone and phrasing, causing the model to bleed predictions across these two categories.
+   * *How I know:* The pre-training seed confusion matrix shows that 13 real `hot_take` posts were misclassified as `reaction` (the single largest off-diagonal error), demonstrating a systematic directional confusion where passionate opinions are mistaken for casual sentiment.
+
+2. **A boundary applied inconsistently (Human labeling variance):**
+   * *Cause:* Subtle shifts in applying the decision rules during manual annotation led to inconsistent boundaries between analytical metrics and heated opinions.
+   * *How I know:* The agreement report revealed that disagreements were driven by borderline posts where quantitative phrasing was used rhetorically rather than empirically, proving that some errors stem from human labeling inconsistencies rather than model failure.
+
+3. **Too few examples for a label (`analysis` representation):**
+   * *Cause:* With `analysis` making up only 20.4% (70 active rows) of the dataset compared to over 40% for `reaction`, the model lacked sufficient statistical signal to reliably learn the `analysis` decision boundary across all seeds.
+   * *How I know:* The per-label F1 scores showed `analysis` dropping to 0.167 on seed 7, reflecting high variance and data scarcity for underrepresented categories.
+
+4. **A task the model cannot fully reach from this data volume (Generalization ceiling):**
+   * *Cause:* A training set of 225 active rows across three nuanced classes is insufficient for a base model to master fine-grained pragmatic distinctions in gaming discourse.
+   * *How I know:* Overall accuracy plateaued below 62% across all three randomized seeds, indicating that the current dataset size hits a natural ceiling for capturing complex discursive semantics.
 
 
 
