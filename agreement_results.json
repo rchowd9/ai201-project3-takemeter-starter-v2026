@@ -1,0 +1,58 @@
+{
+  "compared": 30,
+  "agreed": 20,
+  "agreement_rate": 0.6666666666666666,
+  "disagreements": [
+    {
+      "text": "Anyone who races more than once a month isn't training, they're just collecting medals.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Heart rate zones are astrology for runners.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "The club needs to stop pretending the Tuesday session is for everyone. It isn't and it never has been.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Times are down about 3% since the shoe rules changed, so obviously the shoes are the whole story and the sport has a problem.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Marathon training plans are all the same plan with different fonts.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "If you need a gel before 90 minutes you have a fuelling problem, not an energy problem.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Road racing peaked in about 2015 and everything since has been marketing.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Track sessions are wasted on anyone running slower than 8 minute miles. You'd get more out of just running more.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Nobody actually enjoys the long run. They enjoy having done it, which is a completely different thing, and the sport would be more honest if it said so.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    },
+    {
+      "text": "Every injury thread on this forum is the same injury and the same three replies.",
+      "staff": "hot_take",
+      "mine": "hot-take"
+    }
+  ],
+  "staff_posts_not_in_mine": 0
+}
