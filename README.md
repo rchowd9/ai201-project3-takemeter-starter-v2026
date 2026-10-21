@@ -382,7 +382,13 @@ The pattern shows that my primary point of friction was distinguishing between e
 
 **What I changed:**
 
+I relabelled one boundary, `reaction` vs `hot_take`, and changed nothing else. I had applied rule 2 two ways to the same kind of post: a verdict on how a player or team is performing. "not_me is crazy good" and "dazzle mvp" were `hot_take`, but "Not Me is a fuckin beast. What a player." and "That dazzle is so good!!" were `reaction`. I now apply the rule once. A performance verdict is `hot_take`, because strength of feeling is not support and exclamation marks don't make a post about the writer. A post stays `reaction` only if it reports the writer's own state ("So proud of not_me…", "I want axe!") or reacts to one specific moment ("Wtf that throw", "such a genius move by Watson, blink into Bane…").
+
+**16 rows changed**, all `reaction` → `hot_take` (rows 26, 41, 52, 95, 133, 169, 178, 200, 202, 205, 221, 222, 225, 258, 313, 323). Label counts went from reaction 142 / hot_take 111 / analysis 70 to reaction 126 / hot_take 127 / analysis 70. The original file is kept as `labels_before_relabel.csv`. Rows were chosen by the rule alone, never by looking at model predictions. The notebook rebuilds its splits from `labels.csv`, so the same rule now covers the train and test rows.
+
 **Which diagnosis pointed at it:**
+
+The before-run confusion matrix (seed 42): 13 of 17 test `hot_take` posts were predicted `reaction`, and `hot_take` F1 was 0.29. Reading the training rows on both sides of that boundary showed the same kind of post filed under both labels, so the model was learning a boundary I hadn't drawn consistently. Note that the agreement check itself did not show this. All 10 of its "disagreements" were the spelling `hot-take` vs `hot_take`, and once that is normalised I agree with staff on 30/30.
 
 ### Run Log — After
 
