@@ -419,14 +419,16 @@ Yes, relabeling the boundary significantly helped clear up the targeted `hot_tak
 
 ## What's Still Broken
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
+1. **Severe Data Scarcity for `analysis`:**
+   * *What I'd do:* Collect and annotate 30 to 50 additional empirical/data-driven posts specifically for the `analysis` class to give the model sufficient statistical representation.
+   * *Why I stopped:* The scope of this iteration was strictly limited to relabeling a single inconsistent decision boundary on existing rows rather than augmenting the dataset with new raw text posts.
 
+2. **Cross-Seed Performance Variance on Small Classes:**
+   * *What I'd do:* Apply class-weighted loss functions during training or increase the dataset size to stabilize the test split evaluations.
+   * *Why I stopped:* With an active test split of under 50 rows, single-example prediction flips continue to produce noticeable F1 score swings across different random seeds.
 
-
-**The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
-
+**The gap between what I meant my labels to capture and what the model learned:**
+I intended my labels to strictly separate personal reflections from critical opinions based on whether the post evaluated player/game performance or reported personal state. While fine-tuning effectively learned the `reaction` class (F1 > 0.72 across all seeds), the model still struggles to capture `analysis` due to data scarcity, often defaulting empirical posts with weak numerical features into `hot_take`.
 
 
 <!-- ═════════════════════════════════════════════════════════════════════
